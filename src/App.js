@@ -9,16 +9,16 @@ import CreateArea from "../src/components/CreateArea";
 
 function App() {
 
-  const [titleItems, setTitleItems] = useState([]);
-  const [contentItems, setContentItems] = useState([]);
+  //const [titleItems, setTitleItems] = useState([]);
+  //const [contentItems, setContentItems] = useState([]);
   const [items, setItems] = useState([]);
 
   function addItem(titleInput, contentInput) {
     //event.preventDefault();
     console.log("add item", titleInput, contentInput);
-    setTitleItems((prevT) => [...prevT, titleInput]);
+    //setTitleItems((prevT) => [...prevT, titleInput]);
 
-    setContentItems((prevC) => { return [...prevC, contentInput]; });
+    //setContentItems((prevC) => { return [...prevC, contentInput]; });
 
     setItems(preItems => [...preItems, {
       title: titleInput,
